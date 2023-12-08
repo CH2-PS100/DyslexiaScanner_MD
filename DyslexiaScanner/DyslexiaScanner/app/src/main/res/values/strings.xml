@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DyslexiaScanner</string>
+
+    <string name="hello">Hello!</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="welcome">Welcome!</string>
+    <string name="lets_create_account">Let\'s Create an Account!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Full Name</string>
+    <string name="login">LOGIN</string>
+    <string name="signup">SIGN UP</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="create_account">Create Account</string>
+    <string name="have_account">Have an account? </string>
+    <string name="LOGIN">LOGIN</string>
+    <string name="Login">Login</string>
+    <string name="logo">logo</string>
+</resources>
