@@ -11,11 +11,11 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        app:srcCompat="@drawable/logo"
-        android:contentDescription="@string/logo"/>
+        android:layout_width="51dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/logo"
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:layout_marginTop="0dp"
-        android:textStyle="bold" />
+        android:fontFamily="@font/poppins_bold" />
 
     <TextView
         android:layout_width="match_parent"
@@ -32,8 +32,7 @@
         android:text="@string/welcome_back"
         android:textColor="@color/black"
         android:textSize="20sp"
-        android:textStyle="bold" />
-
+        android:fontFamily="@font/poppins_bold" />
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -48,6 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
+            android:fontFamily="@font/poppins_regular"
             android:inputType="textEmailAddress"/>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -64,6 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
+            android:fontFamily="@font/poppins_regular"
             android:inputType="textPassword"/>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -75,7 +76,8 @@
         android:textSize="16sp"
         android:layout_marginTop="40dp"
         android:background="@drawable/round_btn"
-        android:text="@string/LOGIN"/>
+        android:text="@string/LOGIN"
+        android:fontFamily="@font/poppins_semibold"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -88,12 +90,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/dont_have_account"
+            android:fontFamily="@font/poppins_regular"
             android:textSize="12sp"/>
         <TextView
             android:id="@+id/create_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/create_account"
+            android:fontFamily="@font/poppins_semibold"
             android:textSize="12sp"
             android:textStyle="bold"
             android:textColor="@color/orange"
@@ -102,11 +106,12 @@
 
     <ProgressBar
         android:id="@+id/progressBar"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_gravity="center|bottom"
         tools:layout_editor_absoluteX="142dp"
         tools:layout_editor_absoluteY="162dp"
         tools:ignore="MissingConstraints" />
+
 
 </LinearLayout>

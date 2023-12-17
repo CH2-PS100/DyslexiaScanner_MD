@@ -51,11 +51,11 @@ class SignupActivity : AppCompatActivity() {
                 if (myEditPassword.text.toString() == myEditPasswordconf.text.toString()){
                     register()
                 }else{
-                    Toast.makeText(this, "Konfirmasi Kata Sandi Harus Sama!",   LENGTH_SHORT).show()
-                }
+                    val errorMessage = getString(R.string.password_confirmation_mismatch)
+                    Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show()                }
             }else{
-                Toast.makeText(this, "Silahkan Isi Semua Data!",   LENGTH_SHORT).show()
-
+                val errorMessage = getString(R.string.fill_all_fields)
+                Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show()
             }
         }
     }

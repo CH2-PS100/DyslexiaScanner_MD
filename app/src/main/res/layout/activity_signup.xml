@@ -11,11 +11,11 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        app:srcCompat="@drawable/logo"
-        android:contentDescription="@string/logo"/>
+        android:layout_width="51dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/logo"
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:layout_marginTop="0dp"
-        android:textStyle="bold" />
+        android:fontFamily="@font/poppins_bold" />
 
     <TextView
         android:layout_width="match_parent"
@@ -32,12 +32,12 @@
         android:text="@string/lets_create_account"
         android:textColor="@color/black"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:fontFamily="@font/poppins_bold"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         app:startIconDrawable="@drawable/person"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -46,13 +46,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/name"
+            android:fontFamily="@font/poppins_regular"
             android:inputType="text"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         app:startIconDrawable="@drawable/email"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -61,13 +62,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
+            android:fontFamily="@font/poppins_regular"
             android:inputType="textEmailAddress"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/lock"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -77,13 +79,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
+            android:fontFamily="@font/poppins_regular"
             android:inputType="textPassword"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/lock"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -102,33 +105,34 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="16sp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/round_btn"
-        android:text="@string/signup"/>
+        android:text="@string/signup"
+        android:fontFamily="@font/poppins_semibold"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/have_account"
+            android:fontFamily="@font/poppins_regular"
             android:textSize="12sp"/>
         <TextView
             android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Login"
+            android:fontFamily="@font/poppins_semibold"
             android:textSize="12sp"
             android:textStyle="bold"
             android:textColor="@color/orange"
             android:layout_marginStart="4dp"/>
     </LinearLayout>
-
-
 
 </LinearLayout>

@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
     id("com.google.gms.google-services")
 
 }
@@ -38,6 +39,7 @@ android {
 
     buildFeatures{
         viewBinding = true
+        dataBinding = true
     }
 }
 
@@ -55,5 +57,19 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-auth-ktx")
+    implementation ("org.jetbrains.kotlin:kotlin-stdlib:1.5.30")
+
+    implementation ("com.google.firebase:firebase-database:20.3.0")
+    implementation ("com.firebaseui:firebase-ui-database:8.0.2")
+
+    implementation ("com.squareup.okhttp3:okhttp:4.11.0")
+
+
+    implementation ("androidx.fragment:fragment-ktx:1.6.2")
+    implementation ("com.squareup.picasso:picasso:2.5.2")
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
+    implementation("com.github.bumptech.glide:glide:5.0.0-rc01")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.16.0")
+
 
 }

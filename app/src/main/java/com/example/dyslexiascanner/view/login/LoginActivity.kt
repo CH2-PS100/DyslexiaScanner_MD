@@ -1,10 +1,12 @@
 package com.example.dyslexiascanner.view.login
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.LinearLayout
 import android.widget.ProgressBar
 import android.widget.Toast
 import android.widget.Toast.LENGTH_SHORT
@@ -34,6 +36,8 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
+
 
         myEditEmail = findViewById(R.id.email)
         myEditPassword = findViewById(R.id.password_toggle)
@@ -49,9 +53,10 @@ class LoginActivity : AppCompatActivity() {
             if (myEditEmail.text.isNotEmpty() && myEditPassword.text.isNotEmpty()){
                 Login()
             }else{
-                Toast.makeText(this, "Silahkan Isi Terlebih Dahulu", Toast.LENGTH_SHORT).show()
-            }
+                val errorMessage = getString(R.string.login_fill_required)
+                Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show()            }
         }
+
 
     }
 
@@ -72,4 +77,5 @@ class LoginActivity : AppCompatActivity() {
             binding.progressBar.hide()
         }
     }
+
 }
