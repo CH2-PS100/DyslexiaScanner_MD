@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".view.camera.ScanActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/upper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@drawable/round_btn"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back"></ImageView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text="@string/scan_handwriting"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- New LinearLayout below the 'upper' LinearLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp">
+
+            <!-- Include your image, text, and other views here -->
+
+            <ImageView
+                android:id="@+id/photoView"
+                android:layout_width="270dp"
+                android:layout_height="193dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:contentDescription="@string/scan_handwriting"
+                app:srcCompat="@drawable/scan" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/please_insert"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"/>
+
+            <!-- The two existing LinearLayouts -->
+            <LinearLayout
+                android:id="@+id/linear_layout_scan_camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/round_btn"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- Include views for 'scan_camera' and 'scan_with_camera' here -->
+
+                <ImageView
+                    android:id="@+id/scan_camera"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="@string/scan_handwriting"
+                    app:srcCompat="@drawable/scan1" />
+
+                <TextView
+                    android:id="@+id/scan_with_camera"
+                    android:layout_width="156dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="@string/scan_camera"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_scan_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_button_oren"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- Include views for 'scan_gallery' and 'how_to_use_desc' here -->
+
+                <ImageView
+                    android:id="@+id/scan_gallery"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="@string/scan_handwriting"
+                    app:srcCompat="@drawable/gallery" />
+
+                <TextView
+                    android:id="@+id/how_to_use_desc"
+                    android:layout_width="204dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="@string/insert_image"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/green"
+                android:text="@string/btn_result"
+                android:fontFamily="@font/poppins_semibold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

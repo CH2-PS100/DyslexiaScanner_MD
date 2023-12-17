@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="start"
+    tools:context=".view.home.HomeFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Hi"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/how_are_you"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/poppins_bold" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_article"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_btn"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/article"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/article"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_scan"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button_green"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/scan_handwriting"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_howtouse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button_grey"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/how_to_use"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/How_to_use"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/how_to_use_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/how_to_use_desc"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="12sp"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

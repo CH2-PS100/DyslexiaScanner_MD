@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "80000969277",
+    "project_id": "ch2-ps100-cc",
+    "storage_bucket": "ch2-ps100-cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80000969277:android:6c9c76f6ae4ba2e1f4d854",
+        "android_client_info": {
+          "package_name": "com.example.dyslexiascanner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH8FxHR5EODuR2H_hivA8Pz6CptM2s4i0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80000969277:android:637ddfa752f812a1f4d854",
+        "android_client_info": {
+          "package_name": "com.example.testing_auth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH8FxHR5EODuR2H_hivA8Pz6CptM2s4i0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
