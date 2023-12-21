@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import com.example.dyslexiascanner.databinding.FragmentHomeBinding
 import com.example.dyslexiascanner.view.article.ArticleActivity
 import com.example.dyslexiascanner.view.camera.ScanActivity
-import com.example.dyslexiascanner.view.login.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class HomeFragment : Fragment() {

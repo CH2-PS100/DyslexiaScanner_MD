@@ -44,7 +44,6 @@
                 android:fontFamily="@font/poppins_bold"
                 android:gravity="center"
                 android:text="@string/detail"
-                android:textColor="@color/black"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -70,9 +69,9 @@
                 android:layout_marginBottom="40dp"
                 android:contentDescription="@string/scan_result"
                 app:srcCompat="@drawable/scan" />
-            
+
         </LinearLayout>
-        
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -86,8 +85,8 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
                 android:text="@string/result"
-                android:textColor="@color/white"
                 android:textSize="16sp"
+                android:textColor="@color/white"
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
@@ -101,8 +100,8 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_medium"
                 android:text="@string/tv_result"
-                android:textColor="@color/white"
                 android:textSize="16sp"
+                android:textColor="@color/white"
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
@@ -125,8 +124,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
-                android:text="@string/recomendation"
-                android:textColor="@color/black"
+                android:text="@string/diagnosis"
                 android:textSize="16sp"
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="20dp"
@@ -136,12 +134,11 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/recomendation"
+                android:id="@+id/recommendation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_medium"
-                android:text="@string/tv_recomendation"
-                android:textColor="@color/black"
+                android:text="@string/tv_diagnosis"
                 android:textSize="16sp"
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="20dp"
@@ -154,6 +151,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/chat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -166,7 +164,6 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_medium"
                 android:text="@string/detail_chat"
-                android:textColor="@color/black"
                 android:textSize="14sp"
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="0dp"

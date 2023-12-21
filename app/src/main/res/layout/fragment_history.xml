@@ -5,10 +5,22 @@
     android:layout_height="match_parent"
     tools:context=".view.history.HistoryFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/historyRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            tools:listitem="@layout/item_history">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
 
 </FrameLayout>

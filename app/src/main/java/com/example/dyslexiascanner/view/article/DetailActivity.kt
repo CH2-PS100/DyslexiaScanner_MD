@@ -1,7 +1,9 @@
 package com.example.dyslexiascanner.view.article
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.LinearLayout
 import androidx.databinding.DataBindingUtil
 import com.example.dyslexiascanner.R
 import com.example.dyslexiascanner.databinding.ActivityDetailBinding
@@ -23,10 +25,10 @@ class DetailActivity : AppCompatActivity() {
         val articleDateTime = articleIntent.getStringExtra("dateTime")
 
         val articleData = ArticleData(
-            name = articleName,
-            info = articleInfo,
-            img = articleImg,
-            dateTime = articleDateTime
+            name = articleName.orEmpty(),
+            info = articleInfo.orEmpty(),
+            img = articleImg.orEmpty(),
+            dateTime = articleDateTime.orEmpty()
         )
 
         binding.isData = articleData
@@ -35,6 +37,17 @@ class DetailActivity : AppCompatActivity() {
             binding.img.loadImage(articleImg, getProgessDrawable(this))
         } else {
             binding.img.setImageResource(R.mipmap.ic_launcher)
+        }
+
+        initializeUI()
+    }
+
+    private fun initializeUI() {
+        val backButton: LinearLayout = findViewById(R.id.back)
+        backButton.setOnClickListener {
+            val intent = Intent(this, ArticleActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }
