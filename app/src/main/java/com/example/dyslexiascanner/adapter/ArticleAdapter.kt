@@ -5,8 +5,8 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.recyclerview.widget.RecyclerView
 import com.example.dyslexiascanner.R
+import androidx.recyclerview.widget.RecyclerView
 import com.example.dyslexiascanner.databinding.ItemListBinding
 import com.example.dyslexiascanner.model.ArticleData
 import com.example.dyslexiascanner.view.article.DetailActivity
@@ -18,6 +18,10 @@ class ArticleAdapter(
 
     inner class ArticleViewHolder(val v: ItemListBinding) : RecyclerView.ViewHolder(v.root)
 
+    fun setFilteredList(articleList: ArrayList<ArticleData>){
+        this.articleList = articleList
+        notifyDataSetChanged()
+    }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArticleViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val v = DataBindingUtil.inflate<ItemListBinding>(
@@ -40,7 +44,6 @@ class ArticleAdapter(
             val info = newList.info?.replace("\\n", "\n")
             val dateTime = newList.dateTime
 
-            /**set Data*/
             val mIntent = Intent(context, DetailActivity::class.java)
             mIntent.putExtra("img", img)
             mIntent.putExtra("name", name)
@@ -50,4 +53,7 @@ class ArticleAdapter(
 
         }
     }
+
+
+
 }

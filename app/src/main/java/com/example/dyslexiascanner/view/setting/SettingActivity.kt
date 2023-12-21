@@ -4,7 +4,6 @@ import android.content.Intent
 import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.dyslexiascanner.R
 import com.example.dyslexiascanner.databinding.ActivitySettingBinding
 import com.example.dyslexiascanner.view.login.LoginActivity
 import com.google.firebase.auth.FirebaseAuth

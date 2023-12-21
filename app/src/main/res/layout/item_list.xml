@@ -9,8 +9,11 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="5dp">
+        app:cardCornerRadius="5dp"
+        android:background="@color/white">
         <LinearLayout
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -21,31 +24,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:id="@+id/animalImg"
-                    android:imageUrl="@{isArticle.img}"
+                    android:id="@+id/articleImg"
+                    app:imageUrl="@{isArticle.img}"
                     android:scaleType="centerCrop"
                     android:layout_width="140dp"
-                    android:layout_height="140dp"
+                    android:layout_height="80dp"
                     android:contentDescription="@string/app_name"/>
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
                     <TextView
                         android:id="@+id/name"
-                        android:textSize="18sp"
-                        android:fontFamily="@font/poppins_semibold"
-                        android:text="@{isArticle.name}"
-                        android:layout_margin="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-
-                    <TextView
-                        android:id="@+id/description"
                         android:textSize="12sp"
                         android:fontFamily="@font/poppins_semibold"
-                        android:text="@{isArticle.info}"
-                        android:layout_margin="10dp"
+                        android:text="@{isArticle.name}"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/date"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@{isArticle.dateTime}"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="6dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
 

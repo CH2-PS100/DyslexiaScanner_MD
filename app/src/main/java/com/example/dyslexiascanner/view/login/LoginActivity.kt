@@ -4,17 +4,14 @@ import android.content.Intent
 import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.EditText
-import android.widget.LinearLayout
-import android.widget.ProgressBar
 import android.widget.Toast
 import android.widget.Toast.LENGTH_SHORT
 import com.example.dyslexiascanner.MainActivity
 import com.example.dyslexiascanner.R
 import com.example.dyslexiascanner.databinding.ActivityLoginBinding
-import com.example.dyslexiascanner.view.hide
-import com.example.dyslexiascanner.view.show
+import com.example.dyslexiascanner.retrofit.hide
+import com.example.dyslexiascanner.retrofit.show
 import com.example.dyslexiascanner.view.signup.SignupActivity
 import com.google.firebase.auth.FirebaseAuth
 

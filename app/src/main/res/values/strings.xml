@@ -30,16 +30,22 @@
     <string name="btn_result">Cek Result</string>
     <string name="camera_permission_required">Camera permission is required to use the camera.</string>
     <string name="storage_permission_required">Storage permission is required to access gallery.</string>
-    <string name="login_fill_required">Silahkan isi semua kolom terlebih dahulu.</string>
-    <string name="password_confirmation_mismatch">Konfirmasi Kata Sandi Harus Sama!</string>
-    <string name="fill_all_fields">Silahkan isi semua kolom terlebih dahulu.</string>
+    <string name="login_fill_required">Please fill in all columns first.</string>
+    <string name="password_confirmation_mismatch">Confirm Password Must Be the Same!</string>
+    <string name="fill_all_fields">Please fill in all columns first.</string>
     <string name="detail">Detail</string>
-    <string name="result">Result</string>
-    <string name="recomendation">Recomendation</string>
+    <string name="result">Result:</string>
+    <string name="diagnosis">Diagnosis:</string>
     <string name="scan_result">Scan Result</string>
-    <string name="tv_recomendation">A dyslexia diagnosis doesnt impede a childs reading development</string>
-    <string name="tv_result">Unfortunately, there is a >50% chance of suffering dyslexia.</string>
+    <string name="tv_diagnosis">Congratulation, you are normal.</string>
+    <string name="tv_result">00.00%</string>
     <string name="detail_chat">To find out more about your childs condition, you can discuss with your doctor <font color="#FFC354">here</font>.</string>
+    <string name="empty_image_warning">Please insert the image file first.</string>
+    <string name="online">Online</string>
+    <string name="CHAT">Chat</string>
+    <string name="chat">Consultation</string>
+    <string name="profile">Profile</string>
+    <string name="fullname">Full Name</string>
 
 
 

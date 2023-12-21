@@ -5,7 +5,6 @@ import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.dyslexiascanner.databinding.ActivityMainBinding
 import com.example.dyslexiascanner.view.chat.ChatActivity

@@ -8,7 +8,6 @@ import android.widget.Toast
 import android.widget.Toast.LENGTH_SHORT
 import com.example.dyslexiascanner.MainActivity
 import com.example.dyslexiascanner.R
-import com.example.dyslexiascanner.databinding.ActivityLoginBinding
 import com.example.dyslexiascanner.databinding.ActivitySignupBinding
 import com.example.dyslexiascanner.view.login.LoginActivity
 import com.google.firebase.auth.FirebaseAuth

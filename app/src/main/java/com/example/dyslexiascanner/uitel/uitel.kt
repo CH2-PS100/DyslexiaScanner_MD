@@ -5,8 +5,8 @@ import android.widget.ImageView
 import androidx.databinding.BindingAdapter
 import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
 import com.example.dyslexiascanner.R
+import com.bumptech.glide.request.RequestOptions
 
 fun getProgessDrawable(context: Context): CircularProgressDrawable {
     return CircularProgressDrawable(context).apply {
@@ -22,11 +22,11 @@ fun ImageView.loadImage(uri: String?, progressDawable: CircularProgressDrawable)
 
     Glide.with(context)
         .setDefaultRequestOptions(option)
-        .load(uri)
+        .load(requireNotNull(uri))
         .into(this)
 }
 
-@BindingAdapter("android:imageUrl")
+@BindingAdapter("app:imageUrl")
 fun loadImage(view: ImageView, url: String?) {
     if (!url.isNullOrEmpty()) {
         view.loadImage(url, getProgessDrawable(view.context))

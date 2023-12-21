@@ -12,7 +12,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Hi"
-        android:textColor="@color/black"
         android:textSize="24sp"
         android:layout_marginTop="50dp"
         android:fontFamily="@font/poppins_bold"/>
@@ -21,7 +20,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/how_are_you"
-        android:textColor="@color/black"
         android:textSize="24sp"
         android:layout_marginTop="0dp"
         android:fontFamily="@font/poppins_bold" />
