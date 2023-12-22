@@ -91,7 +91,7 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/edit_text_shadow"
-                android:hint="Say something..."
+                android:hint="Type here"
                 android:fontFamily="@font/poppins_regular"
                 android:inputType="text"
                 android:minHeight="48dp"
