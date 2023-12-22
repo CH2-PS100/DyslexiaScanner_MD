@@ -15,6 +15,8 @@
 
 
 ## Package Structure
+
+<pre>
 com.example.dyslexiascanner          # Root Package
 ├── adapter                          # Package for adapters
 │   ├── ArticleAdapter               # Adapter for handling Article-related UI
@@ -22,20 +24,19 @@ com.example.dyslexiascanner          # Root Package
 │ 
 ├── model                            # Package for data models
 │   ├── ArticleData                  # Data model for articles
-│   ├── ChatData                     # Data model for chat-related data   
+│   └── ChatData                     # Data model for chat-related data   
 |
 ├── network                          # Package for network-related classes
 │   ├── ApiConfig                    # Configuration for API
 │   └── ApiService                   # Service for making API requests
-|   ├── GetResponse                  # Model for API GET responses
+│   ├── GetResponse                  # Model for API GET responses
 │   └── PostResponse                 # Model for API POST responses
 │   └── Utils                        # Utility classes for network operations
 │
-│
-└── uitel                            # Package for UI elements
+├── uitel                            # Package for UI elements
 │
 └── View                             # Main package for views and UI components
-
+</pre>
 
 
 
