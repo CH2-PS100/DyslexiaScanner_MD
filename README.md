@@ -1,5 +1,9 @@
 # DyslexiaScanner_MD
 
+## Screenshots
+
+
+
 ## Firebase Config
 
 To make the google-services.json config values accessible to Firebase SDKs, you need the Google services Gradle plugin.
